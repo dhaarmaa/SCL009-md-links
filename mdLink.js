@@ -1,13 +1,4 @@
-// module.exports = () => {
-//   // ...
-// };
-// fs=fine systemnpm install --
-const fs= require('fs');
-
-const marked= require('marked');
-// fs.readFile(./)
-const links= (path)=>{
-  fs.readFile(path, 'utf8', (err, data)=>{
+fs.readFile(path, 'utf8', (err, data)=>{
     if(err){
   throw err
     }
@@ -25,7 +16,3 @@ const links= (path)=>{
   marked(data, {renderer:renderer})
   console.log(links)
   })
-}
-
-console.log(links('./prueba.md'));
-
